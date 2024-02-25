@@ -1,6 +1,6 @@
-name: 'The name of your action here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'GCP Workflows Advanced Actions'
+description: 'Help to deploy Cloud Functions used by a Workflow'
+author: 'Yohann PARISIEN'
 
 # Add your action's branding here. This will appear on the GitHub Marketplace.
 branding:
@@ -9,10 +9,13 @@ branding:
 
 # Define your inputs here.
 inputs:
-  milliseconds:
-    description: 'Your input description here'
+  env:
+    description: 'Environment (dev/staging/prod)'
     required: true
-    default: '1000'
+    default: 'dev'
+  specs:
+    description: 'Specifications of Workflow'
+    required: true
 
 # Define your outputs here.
 outputs:
